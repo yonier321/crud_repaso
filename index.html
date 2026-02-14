@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CRUD Avanzado</title>
+<link rel="stylesheet" href="src/shared/css/styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">CRUD</a>
+  <a href="src/features/callback/callback.html">Callback</a>
+  <a href="src/features/promise/promise.html">Promise</a>
+  <a href="src/features/async/async.html">Async/Await</a>
+  <a href="src/features/objects/objects.html">Destructuring</a>
+</nav>
+
+
+<div class="container">
+<h2>Gestión de Usuarios</h2>
+
+<input type="text" id="nombre" placeholder="Nombre">
+<input type="email" id="correo" placeholder="Correo">
+<input type="text" id="documento" placeholder="Documento">
+<button onclick="agregar()">Agregar</button>
+
+<p id="mensaje" class="error"></p>
+
+<table>
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Correo</th>
+<th>Documento</th>
+<th>Acciones</th>
+</tr>
+</thead>
+<tbody id="tabla"></tbody>
+</table>
+
+</div>
+<script src="src/features/crud/crud.js"></script>
+</body>
+</html>
